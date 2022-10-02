@@ -41,34 +41,50 @@ for i in range(9): # <- Cuz there are 9 spaces
     # checking for winning condition
     if board['top-L'] == board['top-M'] == board['top-R'] != ' ':
         printBoard(board)
+        if turn == 'X': turn = 'O'
+        else: turn = 'X'
         print("Game Over. " + turn + " won!")
         break
     elif board['mid-L'] == board['mid-M'] == board['mid-R'] != ' ':
         printBoard(board)
+        if turn == 'X': turn = 'O'
+        else: turn = 'X'
         print("Game Over. " + turn + " won!")
         break
     elif board['low-L'] == board['low-M'] == board['low-R'] != ' ':
         printBoard(board)
+        if turn == 'X': turn = 'O'
+        else: turn = 'X'
         print("Game Over. " + turn + " won!")
         break
     elif board['top-L'] == board['mid-L'] == board['low-L'] != ' ':
         printBoard(board)
+        if turn == 'X': turn = 'O'
+        else: turn = 'X'
         print("Game Over. " + turn + " won!")
         break
     elif board['top-M'] == board['mid-M'] == board['low-M'] != ' ':
         printBoard(board)
+        if turn == 'X': turn = 'O'
+        else: turn = 'X'
         print("Game Over. " + turn + " won!")
         break
     elif board['top-R'] == board['mid-R'] == board['low-R'] != ' ':
         printBoard(board)
+        if turn == 'X': turn = 'O'
+        else: turn = 'X'
         print("Game Over. " + turn + " won!")
         break
     elif board['top-L'] == board['mid-M'] == board['low-R'] != ' ':
         printBoard(board)
+        if turn == 'X': turn = 'O'
+        else: turn = 'X'
         print("Game Over. " + turn + " won!")
         break
     elif board['top-R'] == board['mid-M'] == board['low-L'] != ' ':
         printBoard(board)
+        if turn == 'X': turn = 'O'
+        else: turn = 'X'
         print("Game Over. " + turn + " won!")
         break
     # if its the last stem and none of the above condition met
